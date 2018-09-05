@@ -3,7 +3,7 @@
     NEW_FEATURE: 'true'
   kind: ConfigMap
   metadata:
-    name: spinnaker-demo-config2
+    name: spinnaker-demo-config3
     namespace: default
 - apiVersion: apps/v1beta2
   kind: Deployment
@@ -12,7 +12,7 @@
       app: spinnaker
       source: demo
       stack: frontend
-    name: spinnaker-demo2
+    name: spinnaker-demo3
     namespace: default
   spec:
     replicas: 3
@@ -29,7 +29,7 @@
         containers:
           - envFrom:
               - configMapRef:
-                  name: spinnaker-demo-config
+                  name: spinnaker-demo-config3
             image: index.docker.io/mikwah/hello
             name: primary
             ports:
@@ -41,7 +41,7 @@
 - apiVersion: v1
   kind: Service
   metadata:
-    name: spinnaker-demo
+    name: spinnaker-demo3
     namespace: default
   spec:
     ports:
