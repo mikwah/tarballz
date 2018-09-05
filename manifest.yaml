@@ -3,7 +3,7 @@
     NEW_FEATURE: 'true'
   kind: ConfigMap
   metadata:
-    name: spinnaker-demo-config
+    name: spinnaker-demo-config2
     namespace: default
 - apiVersion: apps/v1beta2
   kind: Deployment
@@ -12,7 +12,7 @@
       app: spinnaker
       source: demo
       stack: frontend
-    name: spinnaker-demo
+    name: spinnaker-demo2
     namespace: default
   spec:
     replicas: 3
