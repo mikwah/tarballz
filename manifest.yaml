@@ -3,5 +3,5 @@ data:
   NEW_FEATURE: 'true'
 kind: ConfigMap
 metadata:
-  name: aconfigmap2
+  name: aconfigmap3
   namespace: default
