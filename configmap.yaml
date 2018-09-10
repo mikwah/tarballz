@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  NEW_FEATURE: 'true'
+kind: ConfigMap
+metadata:
+  name: aconfigmap
+  namespace: default
